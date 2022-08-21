@@ -1,0 +1,111 @@
+:root {
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --text-blue: hsl(238, 29%, 16%);
+  --text-red: hsl(14, 88%, 65%);
+  --text-darkest-gray-blue: hsl(237, 12%, 33%);
+  --text-dark-gray-blue: hsl(240, 6%, 50%);
+  --divider-blue: hsl(240, 5%, 91%);
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--soft-violet),
+    var(--soft-blue)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Kumbh Sans", sans-serif;
+  max-width: 1440px;
+}
+
+main {
+  max-width: 900px;
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+  height: 500px;
+  margin: 100px auto 20px;
+}
+
+h1 {
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+footer,
+footer a {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.image {
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-size: 850px;
+  background-repeat: no-repeat;
+  background-position-y: -270px;
+  background-position-x: -480px;
+  width: 450px;
+  height: auto;
+  position: relative;
+}
+
+.main-image {
+  position: absolute;
+  margin-left: -80px;
+  margin-top: 65px;
+  width: 450px;
+  clip: rect(0px, 500px, 500px, 80px);
+}
+
+.box {
+  position: absolute;
+  top: 180px;
+  left: -92px;
+  z-index: 1;
+}
+
+.faq {
+  padding: 70px 50px;
+  font-size: 12px !important;
+  overflow: scroll;
+}
+
+/*accordion*/
+
+.accordion {
+  width: 400px;
+}
+
+.header {
+  font-size: 13px !important;
+  color: var(--text-darkest-gray-blue) !important;
+}
+
+.header:hover {
+  color: var(--text-red) !important;
+}
+
+.text {
+  color: var(--text-dark-gray-blue);
+}
+
+.accordion-button.collapsed::after {
+  background: url("../images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url("../images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  font-weight: 700 !important;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
