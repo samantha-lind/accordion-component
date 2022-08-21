@@ -18,6 +18,12 @@ body {
   background-attachment: fixed;
   font-family: "Kumbh Sans", sans-serif;
   max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 main {
@@ -26,7 +32,6 @@ main {
   border-radius: 20px;
   background-color: white;
   height: 500px;
-  margin: 100px auto 20px;
 }
 
 h1 {
@@ -149,7 +154,7 @@ footer a {
   .mobileimg {
     width: 250px;
     display: block;
-    margin: 50px auto;
+    margin: 0px auto;
   }
 
   .background {
