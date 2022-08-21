@@ -109,3 +109,54 @@ footer a {
 .accordion-button:focus {
   box-shadow: none;
 }
+
+.mobile {
+  display: none;
+}
+
+/*media queries*/
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    max-width: 350px;
+    flex-wrap: wrap;
+    margin-top: 105px;
+    min-width: 320px;
+  }
+
+  .faq {
+    margin: 0px;
+    padding: 100px 20px 20px;
+  }
+
+  .accordion {
+    max-width: 300px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    margin: 0 auto;
+    height: 10px;
+    width: 350px;
+    position: relative;
+    min-width: 320px;
+  }
+
+  .mobileimg {
+    width: 250px;
+    display: block;
+    margin: 50px auto;
+  }
+
+  .background {
+    width: 250px;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: 50px;
+  }
+}
