@@ -74,7 +74,7 @@ footer a {
 
 .faq {
   padding: 70px 50px;
-  font-size: 12px !important;
+  font-size: 12px;
   overflow: scroll;
 }
 
@@ -85,12 +85,12 @@ footer a {
 }
 
 .header {
-  font-size: 13px !important;
-  color: var(--text-darkest-gray-blue) !important;
+  font-size: 13px;
+  color: var(--text-darkest-gray-blue);
 }
 
 .header:hover {
-  color: var(--text-red) !important;
+  color: var(--text-red);
 }
 
 .text {
@@ -108,8 +108,8 @@ footer a {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #fff !important;
-  font-weight: 700 !important;
+  background-color: #fff;
+  font-weight: 400;
 }
 .accordion-button:focus {
   box-shadow: none;
